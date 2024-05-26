@@ -1,0 +1,268 @@
+:root {
+  --main-color: #232830;
+  --secondary-color: #ff7575;
+  --font-light-color: #909090;
+  --font-main: "Poppins", sans-serif;
+  --font-second: "Recursive", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-main);
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.6rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1236px;
+}
+
+/* header section */
+header .container {
+  margin-top: 50px;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header .container nav span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  height: fit-content;
+  gap: 28px;
+}
+
+.links__item a {
+  color: white;
+  font-size: 1.8rem;
+}
+.links__item a:hover {
+  transition: color 0.3s;
+  color: var(--secondary-color);
+}
+
+/* hero section */
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 80px;
+}
+
+.hero__title {
+  font-family: var(--font-second);
+  font-size: 7.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.hero__phrase {
+  font-weight: 400;
+  font-size: 2.9rem;
+}
+
+/* main */
+main {
+  margin-top: 80px;
+  border-top: 3px solid #4d4d4d;
+}
+
+/* filter section */
+.filter {
+  padding: 20px 0;
+}
+
+.filter__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.filter__category {
+  font-size: 2.6rem;
+  color: var(--font-light-color);
+  font-family: var(--font-second);
+  font-style: italic;
+  cursor: pointer;
+}
+.filter__category:hover {
+  transition: color 0.3s ease-out;
+  color: white;
+}
+
+.filter__show {
+  display: flex;
+  gap: 10px;
+}
+
+/* card container */
+.cardlist {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 80px;
+}
+
+/* card styles */
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 390px;
+  height: 439px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 22px;
+}
+
+.card-grid__image {
+  width: 100%;
+  height: 170px;
+}
+
+.card-grid__image img {
+  width: inherit;
+  height: inherit;
+}
+
+.card-grid__content h3 {
+  cursor: pointer;
+}
+.card-grid__content h3:hover {
+  transition: text-decoration 0.3s ease;
+  text-decoration: underline;
+}
+
+.card-grid__content p {
+  color: #0f1217;
+  margin-top: 20px;
+}
+
+.card-grid .card-grid__footer {
+  display: flex;
+  gap: 30px;
+  color: #0f1217;
+}
+
+/* paginator section */
+.paginator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  height: 45px;
+  margin-top: 80px;
+  color: var(--font-light-color);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: var(--font-second);
+}
+
+.paginator__opt {
+  cursor: pointer;
+}
+.paginator__opt:hover {
+  transition: color 0.3s ease-out;
+  color: var(--secondary-color);
+}
+
+.paginator__list {
+  display: flex;
+}
+
+.paginator__list li {
+  display: flex;
+  width: 50px;
+  height: 45px;
+  align-items: end;
+  justify-content: center;
+  cursor: pointer;
+}
+.paginator__list li:hover {
+  transition: color 0.3s ease-out;
+  color: var(--secondary-color);
+}
+
+.paginator__list li.selected {
+  border-top: 5px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+/* footer section */
+
+footer {
+  margin-top: 120px;
+  border-top: 3px solid #4d4d4d;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+footer p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+footer p span {
+  background-color: #4699e0;
+  padding: 2px 10px;
+  font-size: 2rem;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+/* buttons */
+/* network */
+.button--network {
+  background-color: #4699e0;
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.button--network:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #117cd9;
+}
